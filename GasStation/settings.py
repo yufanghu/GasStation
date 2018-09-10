@@ -62,16 +62,17 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+				'django.template.context_processors.static',
             ],
         },
     },
 ]
 
 #静态资源目录配置
-STATIC_URL = '/static/'  # HTML中使用的静态文件夹前缀
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),  # 静态文件存放位置
-]
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "templates"),  #这个名字是项目根目录下的文件夹名称，注意后面有逗号
+)
+STATIC_URL = '/templates/'
 
 WSGI_APPLICATION = 'GasStation.wsgi.application'
 
@@ -123,7 +124,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+
 
 TEMPLATES = [
     {
