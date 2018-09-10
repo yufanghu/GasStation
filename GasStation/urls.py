@@ -17,14 +17,12 @@ Including another URLconf
 #import sys
 #sys.path.append('./views/')
 
-from . import login 
+from . import view 
 from django.contrib import admin
 from django.urls import path
 #from views import login
 
-
-
 urlpatterns = [
     #path('admin/', admin.site.urls),
-	path('test/', login.hello),
+	path('login/', view.login),
 ]

@@ -50,11 +50,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'GasStation.urls'
-
+#配置html文件目录
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], #new
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -65,6 +65,12 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+#静态资源目录配置
+STATIC_URL = '/static/'  # HTML中使用的静态文件夹前缀
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),  # 静态文件存放位置
 ]
 
 WSGI_APPLICATION = 'GasStation.wsgi.application'
