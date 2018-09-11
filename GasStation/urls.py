@@ -26,4 +26,5 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
 	path('login/', view.login),
     path('index/', view.index),
+	path('station/', view.station),
 ]
