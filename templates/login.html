@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>管理系统</title>
+	<title>加油站管理系统</title>
 	
 	{% load static %}
     <!--STYLESHEET-->
@@ -103,16 +103,16 @@
 		    <div class="cls-content-sm panel">
 		        <div class="panel-body">
 		            <div class="mar-ver pad-btm">
-		                <h3 class="h4 mar-no">control system</h3>
+		                <h3 class="h4 mar-no">加油站管理系统</h3>
 		                <!-- <p class="text-muted">Sign In to your account</p> -->
 		            </div>
-		            <form action="{% url 'login' %}" method="post">
+		            <form action="/login/" method="post">
 						{% csrf_token %}
 		                <div class="form-group">
-		                    <input type="text" class="form-control" placeholder="请输入用户名" autofocus>
+		                    <input type="text"  name="user" class="form-control" placeholder="请输入用户名" autofocus>
 		                </div>
 		                <div class="form-group">
-		                    <input type="password" class="form-control" placeholder="请输入密码">
+		                    <input type="password" name="pwd" class="form-control" placeholder="请输入密码">
 		                </div>
 		                <div class="checkbox pad-btm text-left">
 		                    <input id="demo-form-checkbox" class="magic-checkbox" type="checkbox">
