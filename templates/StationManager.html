@@ -28,7 +28,7 @@
     <link href="css/demo/nifty-demo.min.css" rel="stylesheet">
 
 
-        
+
     <!--Bootstrap Table [ OPTIONAL ]-->
     <link href="plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
 
@@ -61,11 +61,11 @@
 
 
     <!--=================================================-->
-    
+
     <!--Demo script [ DEMONSTRATION ]-->
     <script src="js/demo/nifty-demo.min.js"></script>
 
-    
+
     <!--Bootstrap Table Sample [ SAMPLE ]-->
     <script src="js/demo/tables-bs-table.js"></script>
 
@@ -81,14 +81,14 @@
     <!--Bootstrap Table Extension [ OPTIONAL ]-->
     <script src="plugins/bootstrap-table/extensions/editable/bootstrap-table-editable.js"></script>
 
- 
 
-   
-    <style> 
-            .div-c{ float:left;width:85%;} 
-            .div-d{ float:right;width:15%;} 
-    </style> 
-    
+
+
+    <style>
+        .div-c{ float:left;width:70%;} 
+        .div-d{ float:right;width:30%;} 
+    </style>
+
     <!--=================================================
 
     REQUIRED
@@ -114,348 +114,112 @@
     Detailed information and more samples can be found in the document.
 
     =================================================-->
-        
+
 
 </head>
 
 <!--TIPS-->
 <!--You may remove all ID or Class names which contain "demo-", they are only used for demonstration. -->
+
 <body>
-        
+
     <div id="container" class="effect aside-float aside-bright mainnav-lg">
-        
-        <!--NAVBAR-->
-        <!--===================================================-->
-        <header id="navbar">
-            <div id="navbar-container" class="boxed">
 
-                <!--Brand logo & name-->
-                <!--================================-->
-                <div class="navbar-header">
-                    <a href="index.html" class="navbar-brand">
-                        <img src="img/logo.png" alt="Nifty Logo" class="brand-icon">
-                        <div class="brand-title">
-                            <span class="brand-text">1111111</span>
-                        </div>
-                    </a>
-                </div>
-                <!--================================-->
-                <!--End brand logo & name-->
-
-
-                <!--Navbar Dropdown-->
-                <!--================================-->
-                <div class="navbar-content clearfix">
-                    <ul class="nav navbar-top-links pull-left">
-
-                        <!--Navigation toogle button-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li class="tgl-menu-btn">
-                            <a class="mainnav-toggle" href="#">
-                                <i class="demo-pli-view-list"></i>
-                            </a>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End Navigation toogle button-->
-
-
-
-                        <!--Notification dropdown-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-                                <i class="demo-pli-bell"></i>
-                                <span class="badge badge-header badge-danger"></span>
-                            </a>
-
-                            <!--Notification dropdown menu-->
-                            <div class="dropdown-menu dropdown-menu-md">
-                                <div class="pad-all bord-btm">
-                                    <p class="text-semibold text-main mar-no">You have 9 notifications.</p>
-                                </div>
-                                <div class="nano scrollable">
-                                    <div class="nano-content">
-                                        <ul class="head-list">
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#">
-                                                    <div class="clearfix">
-                                                        <p class="pull-left">Database Repair</p>
-                                                        <p class="pull-right">70%</p>
-                                                    </div>
-                                                    <div class="progress progress-sm">
-                                                        <div style="width: 70%;" class="progress-bar">
-                                                            <span class="sr-only">70% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a href="#">
-                                                    <div class="clearfix">
-                                                        <p class="pull-left">Upgrade Progress</p>
-                                                        <p class="pull-right">10%</p>
-                                                    </div>
-                                                    <div class="progress progress-sm">
-                                                        <div style="width: 10%;" class="progress-bar progress-bar-warning">
-                                                            <span class="sr-only">10% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a class="media" href="#">
-                                            <span class="badge badge-success pull-right">90%</span>
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-data-settings icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">HDD is full</div>
-                                                        <small class="text-muted">50 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a class="media" href="#">
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-file-edit icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Write a news article</div>
-                                                        <small class="text-muted">Last Update 8 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a class="media" href="#">
-                                            <span class="label label-danger pull-right">New</span>
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-speech-bubble-7 icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Comment Sorting</div>
-                                                        <small class="text-muted">Last Update 8 hours ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li>
-                                                <a class="media" href="#">
-                                                    <div class="media-left">
-                                                        <i class="demo-pli-add-user-plus-star icon-2x"></i>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">New User Registered</div>
-                                                        <small class="text-muted">4 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li class="bg-gray">
-                                                <a class="media" href="#">
-                                                    <div class="media-left">
-                                                        <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/9.png">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Lucy sent you a message</div>
-                                                        <small class="text-muted">30 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                            <!-- Dropdown list-->
-                                            <li class="bg-gray">
-                                                <a class="media" href="#">
-                                                    <div class="media-left">
-                                                        <img class="img-circle img-sm" alt="Profile Picture" src="img/profile-photos/3.png">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="text-nowrap">Jackson sent you a message</div>
-                                                        <small class="text-muted">40 minutes ago</small>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!--Dropdown footer-->
-                                <div class="pad-all bord-top">
-                                    <a href="#" class="btn-link text-dark box-block">
-                                        <i class="fa fa-angle-right fa-lg pull-right"></i>Show All Notifications
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End notifications dropdown-->
-
-
-
-
-                    </ul>
-                    <ul class="nav navbar-top-links pull-right">
-
-                        <!--User dropdown-->
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <li id="dropdown-user" class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
-                                <span class="pull-right">
-                                    <!--<img class="img-circle img-user media-object" src="img/profile-photos/1.png" alt="Profile Picture">-->
-                                    <i class="demo-pli-male ic-user"></i>
-                                </span>
-                                <div class="username hidden-xs">Aaron Chavez</div>
-                            </a>
-
-
-                            <div class="dropdown-menu dropdown-menu-md dropdown-menu-right panel-default">
-
-                                <!-- Dropdown heading  -->
-                                <div class="pad-all bord-btm">
-                                    <p class="text-main mar-btm"><span class="text-bold">750GB</span> of 1,000GB Used</p>
-                                    <div class="progress progress-sm">
-                                        <div class="progress-bar" style="width: 70%;">
-                                            <span class="sr-only">70%</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- User dropdown menu -->
-                                <!-- <ul class="head-list">
-                                    <li>
-                                        <a href="#">
-                                            <i class="demo-pli-computer-secure icon-lg icon-fw"></i> Lock screen
-                                        </a>
-                                    </li>
-                                </ul> -->
-
-                                <!-- Dropdown footer -->
-                                <div class="pad-all text-right">
-                                    <a href="pages-login.html" class="btn btn-primary">
-                                        <i class="demo-pli-unlock"></i> Logout
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-                        <!--End user dropdown-->
-
-                        <li>
-                            <a href="#" class="aside-toggle navbar-aside-icon">
-                                <i class="pci-ver-dots"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!--================================-->
-                <!--End Navbar Dropdown-->
-
-            </div>
-        </header>
-        <!--===================================================-->
-        <!--END NAVBAR-->
+        <script type="text/javascript" src="js/header.js"></script>
 
         <div class="boxed">
 
             <!--CONTENT CONTAINER-->
             <!--===================================================-->
             <div id="content-container">
-                   
 
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
 
-                        <div class="div-c">
-                                <div class="row">
-                                        <div class="col-lg-4">
-                                          <div class="panel">
-                                            <div class="panel-heading">
-                                              <h3 class="panel-title">地区统计</h3></div>
-                                            <div class="panel-body">
-                                              <!--Morris Area Chart placeholder-->
-                                              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                                              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ --></div>
-                                          </div>
+                    <div class="div-c">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">地区统计</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="ccc" style="height:250px;">
+                                            <!--Morris Line Chart placeholder-->
+                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                                         </div>
-                                        <div class="col-lg-4">
-                                          <div class="panel">
-                                            <div class="panel-heading">
-                                              <h3 class="panel-title">情况统计</h3></div>
-                                            <div class="panel-body">
-                                                    <div id="bbb" style="height:300px;">
-                                                            <!--Morris Line Chart placeholder-->
-                                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                                                           
-                                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                                                    </div>
-                                            </div>
-                                          </div>
-                                          
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="panel">
-                                              <div class="panel-heading">
-                                                <h3 class="panel-title">数据统计</h3></div>
-                                              <div class="panel-body">
-                                                <!--Morris Line Chart placeholder-->
-                                                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                                                <div id="aaa" style="height:300px;">
-                                                        <!--Morris Line Chart placeholder-->
-                                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                                                       
-                                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                                                </div>
-                                                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                                            </div>
-                                            </div>
-                                            <script src="js/echarts.min.js"></script>
-                                            <script src="js/mychart.js"></script>
-                                            <script type="text/javascript">
-                                                ConditionChart();
-                                                DataPieChart();
-                                            </script>
-                                        </div>
+                                    </div>
                                 </div>
-                                <!--===================================================-->
-					<div class="panel">
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">情况统计</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="bbb" style="height:250px;">
+                                            <!--Morris Line Chart placeholder-->
+                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">数据统计</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <!--Morris Line Chart placeholder-->
+                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                        <div id="aaa" style="height:250px;">
+                                            <!--Morris Line Chart placeholder-->
+                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                        </div>
+                                        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                                    </div>
+                                </div>
+                                <script src="js/echarts.min.js"></script>
+                                <script src="js/mychart.js"></script>
+                                <script type="text/javascript">
+                                    ConditionChart();
+                                    DataPieChart();
+                                </script>
+                            </div>
+                        </div>
+                        <!--===================================================-->
+                        <div class="panel">
                             <div class="panel-heading">
                                 <h3 class="panel-title">实时数据</h3>
                             </div>
                             <div class="panel-body">
-                                <table data-toggle="table"
-                                       data-url="data/bs-table.json"
-                                       data-search="true"
-                                       data-show-refresh="true"
-                                       data-show-toggle="true"
-                                       data-show-columns="true"
-                                       data-sort-name="id"
-                                       data-page-list="[5, 10, 20]"
-                                       data-page-size="5"
-                                       data-pagination="false" 
-                                       data-show-pagination-switch="false">
+                                <table data-toggle="table" data-url="data/bs-table.json" data-search="true"
+                                    data-show-refresh="true" data-show-toggle="true" data-show-columns="true"
+                                    data-sort-name="id" data-page-list="[5, 10, 20]" data-page-size="5" data-pagination="false"
+                                    data-show-pagination-switch="false">
                                     <thead>
                                         <tr>
                                             <th data-field="id" data-sortable="true" data-formatter="statusFormatter">状态</th>
                                             <th data-field="name" data-sortable="true">加油站</th>
                                             <th data-field="date" data-sortable="true" data-formatter="dateFormatter">设备ID</th>
-                                            <th data-field="amount" data-align="center" data-sortable="true" data-sorter="priceSorter">气体体积</th>
-                                            <th data-field="status" data-align="center" data-sortable="true" data-formatter="statusFormatter">液体体积</th>
-                                            <th data-field="track" data-align="center" data-sortable="true" data-formatter="trackFormatter">汽液比</th>
-                                            <th data-field="time" data-align="center" data-sortable="true" data-formatter="trackFormatter">交易时间</th>
-                                            <th data-field="origin_id" data-align="center" data-sortable="true" data-formatter="trackFormatter">序号</th>
+                                            <th data-field="amount" data-align="center" data-sortable="true"
+                                                data-sorter="priceSorter">气体体积</th>
+                                            <th data-field="status" data-align="center" data-sortable="true"
+                                                data-formatter="statusFormatter">液体体积</th>
+                                            <th data-field="track" data-align="center" data-sortable="true"
+                                                data-formatter="trackFormatter">汽液比</th>
+                                            <th data-field="time" data-align="center" data-sortable="true"
+                                                data-formatter="trackFormatter">交易时间</th>
+                                            <th data-field="origin_id" data-align="center" data-sortable="true"
+                                                data-formatter="trackFormatter">序号</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -548,25 +312,124 @@
                                     </tbody>
                                 </table>
                             </div>
-                    </div>
+                        </div>
                         <!--===================================================-->
-                        </div> 
-                        <div class="div-d">
-                            	<!--Basic Toolbar-->
-                                <div class="panel">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title">实时数据</h3>
-                                        </div>
-                                        <div class="panel-body">
-                                           
-                                        </div>
-                                </div>
-                        </div> 
-                    
-				
-					
+                    </div>
+                    <div class="div-d">
+                        <!--Basic Toolbar-->
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">告警数据</h3>
+                            </div>
+                            <div class="panel-body">
+                                    <div class="row">
+                                            <!-- <div class="col-sm-6"> -->
+                                
+                                                <!--Extra small weather widget-->
+                                                <!--===================================================-->
+                                
+                                                <div class="panel media middle">
+                                                        <div class="media-left bg-primary pad-all">
+                                                            <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                        </div>
+                                                        <div class="media-body pad-lft">
+                                                            <p class="text-2x mar-no">32°</p>
+                                                            <p class="text-muted mar-no">Sunny</p>
+                                                        </div>
+                                                    </div>
+                                                <!--===================================================-->
+                                                <!--End Extra small weather widget-->
+                                
+                                            <!-- </div> -->
+                                            <!-- <div class="col-sm-6"> -->
+                                
+                                                <!--Extra small weather widget-->
+                                                <!--===================================================-->
+                                                <div class="panel media middle">
+                                                        <div class="media-left bg-primary pad-all">
+                                                            <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                        </div>
+                                                        <div class="media-body pad-lft">
+                                                            <p class="text-2x mar-no">32°</p>
+                                                            <p class="text-muted mar-no">Sunny</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel media middle">
+                                                            <div class="media-left bg-primary pad-all">
+                                                                <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                            </div>
+                                                            <div class="media-body pad-lft">
+                                                                <p class="text-2x mar-no">32°</p>
+                                                                <p class="text-muted mar-no">Sunny</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel media middle">
+                                                                <div class="media-left bg-primary pad-all">
+                                                                    <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                                </div>
+                                                                <div class="media-body pad-lft">
+                                                                    <p class="text-2x mar-no">32°</p>
+                                                                    <p class="text-muted mar-no">Sunny</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel media middle">
+                                                                    <div class="media-left bg-primary pad-all">
+                                                                        <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                                    </div>
+                                                                    <div class="media-body pad-lft">
+                                                                        <p class="text-2x mar-no">32°</p>
+                                                                        <p class="text-muted mar-no">Sunny</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="panel media middle">
+                                                                        <div class="media-left bg-primary pad-all">
+                                                                            <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                                        </div>
+                                                                        <div class="media-body pad-lft">
+                                                                            <p class="text-2x mar-no">32°</p>
+                                                                            <p class="text-muted mar-no">Sunny</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel media middle">
+                                                                            <div class="media-left bg-primary pad-all">
+                                                                                <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                                            </div>
+                                                                            <div class="media-body pad-lft">
+                                                                                <p class="text-2x mar-no">32°</p>
+                                                                                <p class="text-muted mar-no">Sunny</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="panel media middle">
+                                                                                <div class="media-left bg-primary pad-all">
+                                                                                    <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                                                </div>
+                                                                                <div class="media-body pad-lft">
+                                                                                    <p class="text-2x mar-no">32°</p>
+                                                                                    <p class="text-muted mar-no">Sunny</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="panel media middle">
+                                                                                    <div class="media-left bg-primary pad-all">
+                                                                                        <canvas id="demo-weather-xs-icon-1" width="48" height="22"></canvas>
+                                                                                    </div>
+                                                                                    <div class="media-body pad-lft">
+                                                                                        <p class="text-2x mar-no">32°</p>
+                                                                                        <p class="text-muted mar-no">Sunny</p>
+                                                                                    </div>
+                                                                                </div>
+                                                <!--===================================================-->
+                                                <!--End Extra small weather widget-->
+                                
+                                            <!-- </div> -->
+                                     </div>
+                            </div>
+                        </div>
+                    </div>
 
-					
+
+
+
+
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
@@ -576,153 +439,11 @@
             <!--===================================================-->
             <!--END CONTENT CONTAINER-->
 
-
-            
-            <!--ASIDE-->
-            <!--===================================================-->
-            <aside id="aside-container">
-               
-            </aside>
-            <!--===================================================-->
-            <!--END ASIDE-->
-
-            
-            <!--MAIN NAVIGATION-->
-            <!--===================================================-->
-            <nav id="mainnav-container">
-                <div id="mainnav">
-
-                    <!--Menu-->
-                    <!--================================-->
-                    <div id="mainnav-menu-wrap">
-                        <div class="nano">
-                            <div class="nano-content">
-        
-                                <ul id="mainnav-menu" class="list-group">
-						
-						
-						            <!--Menu list item-->
-						            <li>
-						                <a href="StationManager.html">
-						                    <i class="demo-psi-home"></i>
-						                    <span class="menu-title">
-												<strong>油站管理</strong>
-											</span>
-						                </a>
-						            </li>
-                                     <li class="list-divider"></li>    
-						            <!--Menu list item-->
-						            <li>
-						                <a href="#">
-						                    <i class="demo-psi-split-vertical-2"></i>
-						                    <span class="menu-title">
-												<strong>油枪管理</strong>
-											</span>
-											<i class="arrow"></i>
-						                </a>
-						
-						                <!--Submenu-->
-						                <ul class="collapse">
-											<li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
-											<li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
-											<li><a href="layouts-aside-dark-theme.html">Dark version of aside</a></li>
-											<li class="list-divider"></li>								
-						                </ul>
-						            </li>
-						
-						          
-						
-						            <li class="list-divider"></li>                             
-                                </ul>
-
-
-                                <!--Widget-->
-                                <!--================================-->
-                                <div class="mainnav-widget">
-
-                                    <!-- Show the button on collapsed navigation -->
-                                    <div class="show-small">
-                                        <a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
-                                            <i class="demo-pli-monitor-2"></i>
-                                        </a>
-                                    </div>
-
-                                    <!-- Hide the content on collapsed navigation -->
-                                    <div id="demo-wg-server" class="hide-small mainnav-widget-content">
-                                        <ul class="list-group">
-                                            <li class="list-header pad-no pad-ver">Server Status</li>
-                                            <li class="mar-btm">
-                                                <span class="label label-primary pull-right">15%</span>
-                                                <p>CPU 使用率</p>
-                                                <div class="progress progress-sm">
-                                                    <div class="progress-bar progress-bar-primary" style="width: 15%;">
-                                                        <span class="sr-only">15%</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="mar-btm">
-                                                <span class="label label-purple pull-right">75%</span>
-                                                <p>硬盘容量</p>
-                                                <div class="progress progress-sm">
-                                                    <div class="progress-bar progress-bar-purple" style="width: 75%;">
-                                                        <span class="sr-only">75%</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!--================================-->
-                                <!--End widget-->
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--================================-->
-                    <!--End menu-->
-
-                </div>
-            </nav>
-            <!--===================================================-->
-            <!--END MAIN NAVIGATION-->
+            <script type="text/javascript" src="js/left.js"></script>
 
         </div>
 
-        
-
-        <!-- FOOTER -->
-        <!--===================================================-->
-        <footer id="footer">
-
-            <!-- Visible when footer positions are fixed -->
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="show-fixed pull-right">
-                You have <a href="#" class="text-bold text-main"><span class="label label-danger">3</span> pending action.</a>
-            </div>
-
-
-
-            <!-- Visible when footer positions are static -->
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <div class="hide-fixed pull-right pad-rgt">
-                14GB of <strong>512GB</strong> Free.
-            </div>
-
-
-
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-            <!-- Remove the class "show-fixed" and "hide-fixed" to make the content always appears. -->
-            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-            <p class="pad-lft">&#0169; 2016 Your Company</p>
-
-
-
-        </footer>
-        <!--===================================================-->
-        <!-- END FOOTER -->
-
+        <script type="text/javascript" src="js/footer.js" charset="utf-8"></script>
 
         <!-- SCROLL PAGE BUTTON -->
         <!--===================================================-->
@@ -740,5 +461,5 @@
 
 
 </body>
-</html>
 
+</html>
