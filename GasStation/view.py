@@ -7,7 +7,7 @@ from django.shortcuts import render
 from django.shortcuts import redirect    #导入django的重定向模块
 from GasStation.core.loginVerify import *
 from django.shortcuts import render,redirect,HttpResponse,HttpResponseRedirect
-
+from GasStation.core.warning import *
 
 def login(request):
     if request.method == "POST":
@@ -20,10 +20,11 @@ def login(request):
             return HttpResponseRedirect('/index')
         else:
             return render(request,'login.html')
-            
-    
+        
 def index(request):
-    return render(request, 'StationManager.html')
+    return loadWarningData(request)
+    #return render(request, 'StationManager.html')
+    
 def station(request):
     context          = {}
     return render(request, 'station.html', context)
