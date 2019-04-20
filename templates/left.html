@@ -1,7 +1,5 @@
-            
-            <!--MAIN NAVIGATION-->
-            <!--===================================================-->
-            <nav id="mainnav-container">
+ {% load static %}
+ <nav id="mainnav-container">
                 <div id="mainnav">
 
                     <!--Menu-->
@@ -9,44 +7,65 @@
                     <div id="mainnav-menu-wrap">
                         <div class="nano">
                             <div class="nano-content">
-        
+
                                 <ul id="mainnav-menu" class="list-group">
-						
+						            <!--Category name-->
+						            <li class="list-header">管理</li>
 						
 						            <!--Menu list item-->
 						            <li>
-						                <a href="StationManager.html">
+						                <a href="/index/">
 						                    <i class="demo-psi-home"></i>
 						                    <span class="menu-title">
-												<strong>��վ����</strong>
+												<strong>主页</strong>
 											</span>
 						                </a>
 						            </li>
-                                     <li class="list-divider"></li>    
-						            <!--Menu list item-->
+                                    
+                                    <!--Menu list item-->
 						            <li>
+                                            <a href="/manager/">
+                                                <i class="demo-psi-home"></i>
+                                                <span class="menu-title">
+                                                    <strong>管理油站</strong>
+                                                </span>
+                                            </a>
+                                    </li>
+
+                                    <!--Menu list item-->
+						            <li>
+                                            <a href="/station/">
+                                                <i class="demo-psi-home"></i>
+                                                <span class="menu-title">
+                                                    <strong>油枪管理</strong>
+                                                </span>
+                                            </a>
+                                    </li>
+                                    
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <!-- <li class="list-header">其他功能</li> -->
+						
+						            <!--Menu list item-->
+						            <!-- <li>
 						                <a href="#">
-						                    <i class="demo-psi-split-vertical-2"></i>
-						                    <span class="menu-title">
-												<strong>��ǹ����</strong>
-											</span>
+						                    <i class="demo-psi-boot-2"></i>
+						                    <span class="menu-title">一级菜单</span>
 											<i class="arrow"></i>
 						                </a>
 						
-						                <!--Submenu-->
+						               
 						                <ul class="collapse">
-											<li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
-											<li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
-											<li><a href="layouts-aside-dark-theme.html">Dark version of aside</a></li>
-											<li class="list-divider"></li>								
+						                    <li><a href="ui-buttons.html">用户管理</a></li>
+											<li><a href="ui-panels.html">设备管理</a></li>
 						                </ul>
-						            </li>
+						            </li> -->
+						
+						           
+						            <li class="list-divider"></li>
 						
 						          
-						
-						            <li class="list-divider"></li>                             
-                                </ul>
-
 
                                 <!--Widget-->
                                 <!--================================-->
@@ -62,10 +81,10 @@
                                     <!-- Hide the content on collapsed navigation -->
                                     <div id="demo-wg-server" class="hide-small mainnav-widget-content">
                                         <ul class="list-group">
-                                            <li class="list-header pad-no pad-ver">Server Status</li>
+                                            <li class="list-header pad-no pad-ver">服务器状态</li>
                                             <li class="mar-btm">
                                                 <span class="label label-primary pull-right">15%</span>
-                                                <p>CPU ʹ����</p>
+                                                <p>CPU使用率</p>
                                                 <div class="progress progress-sm">
                                                     <div class="progress-bar progress-bar-primary" style="width: 15%;">
                                                         <span class="sr-only">15%</span>
@@ -74,14 +93,18 @@
                                             </li>
                                             <li class="mar-btm">
                                                 <span class="label label-purple pull-right">75%</span>
-                                                <p>Ӳ������</p>
+                                                <p>硬盘使用率</p>
                                                 <div class="progress progress-sm">
                                                     <div class="progress-bar progress-bar-purple" style="width: 75%;">
                                                         <span class="sr-only">75%</span>
                                                     </div>
                                                 </div>
                                             </li>
-                                        
+                                            <!-- <div class="pad-all text-right">
+                                                    <a href="/login/" class="btn btn-primary">
+                                                        <i class="demo-pli-unlock"></i> Logout
+                                                    </a>
+                                            </div> -->
                                         </ul>
                                     </div>
                                 </div>
@@ -96,5 +119,3 @@
 
                 </div>
             </nav>
-            <!--===================================================-->
-            <!--END MAIN NAVIGATION-->

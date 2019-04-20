@@ -26,5 +26,7 @@ def index(request):
     #return render(request, 'StationManager.html')
     
 def station(request):
-    context          = {}
-    return render(request, 'station.html', context)
+    return render(request, 'station.html')
+
+def manager(request):
+    return render(request, 'manager.html')

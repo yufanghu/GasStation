@@ -1,67 +1,3 @@
-function GunChart() {
-    var myChart = echarts.init(document.getElementById('aaa'));
-
-    // 指定图表的配置项和数据
-    var option = {
-        tooltip: {
-            formatter: "{a} <br/>{b} : {c}%"
-        },
-        toolbox: {
-            show: true,
-            feature: {
-                mark: { show: true },
-                restore: { show: true },
-                saveAsImage: { show: true }
-            }
-        },
-        series: [
-            {
-                startAngle: 180,
-                endAngle: 0,
-                name: '业务指标',
-                type: 'gauge',
-                detail: { formatter: '{value}%' },
-                data: [{ value: 10, name: '' }]
-            }
-        ]
-    };
-
-    option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
-    myChart.setOption(option, true);
-}
-
-function GunTimeChart() {
-
-    var myChart = echarts.init(document.getElementById('bbb'));
-    var option = {
-        title: {
-            text: '堆叠区域图'
-        },
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'cross',
-                label: {
-                    backgroundColor: '#6a7985'
-                }
-            }
-        },
-        xAxis: {
-            type: 'category',
-            boundaryGap: false,
-            data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-        },
-        yAxis: {
-            type: 'value'
-        },
-        series: [{
-            data: [820, 932, 901, 934, 1290, 1330, 1320],
-            type: 'line',
-            areaStyle: {}
-        }]
-    };
-    myChart.setOption(option, true); tion
-}
 
 function DataPieChart() {
     // 基于准备好的dom，初始化echarts实例
@@ -111,7 +47,8 @@ function DataPieChart() {
                     }
                 },
                 pointer: {
-                    width: 5
+                    width: 5,
+					length: 80, 
                 },
                 title: {
                     show: true,
@@ -136,6 +73,7 @@ function DataPieChart() {
     // 使用刚指定的配置项和数据显示图表。
     option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
     myChart.setOption(option, true);
+	return myChart;
 }
 
 function ConditionChart() {
@@ -179,4 +117,16 @@ function ConditionChart() {
         ]
     };
     myChart.setOption(option, true);
+	return myChart;
+}
+
+window.onload=function(){ 
+
+	dataPieChart = DataPieChart();
+	conditionChart = ConditionChart();
+	
+	window.onresize = function(){
+		dataPieChart.resize();
+		conditionChart.resize();
+	}
 }

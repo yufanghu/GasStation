@@ -5,6 +5,6 @@ from GasStation.models import *
 
 def loadWarningData(request):
     warning=tbl_warning.objects.all()
-    return render(request, 'StationManager.html', {"warning":warning})
+    return render(request, 'index.html', {"warning":warning})
     
 
